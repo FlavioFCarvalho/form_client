@@ -10,12 +10,10 @@ import { HeaderComponent } from './header/header.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from './forms/forms.module';
 import { AnswersModule } from './answers/answers.module';
-import { routing } from './app.routing';
 import { RouterModule } from '@angular/router';
-import { LoginComponent } from './users/login/login.component';
-import { RegisterComponent } from './users/register/register.component';
-import { Angular2TokenService } from 'angular2-token';
+import { routing } from './app.routing';
 import { UsersModule } from './users/users.module';
+import { Angular2TokenService } from 'angular2-token';
 
 
 @NgModule({
@@ -23,9 +21,7 @@ import { UsersModule } from './users/users.module';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    NotFoundComponent,
-    LoginComponent,
-    RegisterComponent
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -34,13 +30,10 @@ import { UsersModule } from './users/users.module';
     ChartsModule,
     FormsModule,
     AnswersModule,
-    RouterModule,
     UsersModule,
     routing
   ],
   providers: [Angular2TokenService],
   bootstrap: [AppComponent]
 })
-
 export class AppModule { }
-
