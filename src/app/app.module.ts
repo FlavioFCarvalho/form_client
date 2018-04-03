@@ -12,6 +12,8 @@ import { FormsModule } from './forms/forms.module';
 import { AnswersModule } from './answers/answers.module';
 import { routing } from './app.routing';
 import { RouterModule } from '@angular/router';
+import { LoginComponent } from './users/login/login.component';
+import { RegisterComponent } from './users/register/register.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { RouterModule } from '@angular/router';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
