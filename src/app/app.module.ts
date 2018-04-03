@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './users/login/login.component';
 import { RegisterComponent } from './users/register/register.component';
 import { Angular2TokenService } from 'angular2-token';
+import { UsersModule } from './users/users.module';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { Angular2TokenService } from 'angular2-token';
     FormsModule,
     AnswersModule,
     RouterModule,
+    UsersModule,
     routing
   ],
   providers: [Angular2TokenService],
