@@ -1,6 +1,7 @@
 import { AppPage } from './app.po';
 
 describe('onebitforms-client App', () => {
+
   let page: AppPage;
 
   beforeEach(() => {
