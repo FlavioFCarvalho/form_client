@@ -24,6 +24,7 @@ export class Form {
     }
 
     private includeQuestions(questions: any) {
+        // tslint:disable-next-line:forin
         for (const count in questions) {
             this.questions.push( new Question(questions[count]) );
         }
